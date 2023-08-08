@@ -104,6 +104,7 @@ function reducer(state, action) {
           } else if (action.payload === "Hard") {
             return question.points > 10;
           }
+          return question;
         }),
       };
     default:
