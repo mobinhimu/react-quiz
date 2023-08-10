@@ -132,7 +132,7 @@ const App = () => {
     : questions.length;
 
   useEffect(() => {
-    fetch("https://questions-3ev5.onrender.com/questions")
+    fetch("http://localhost:4000/questions")
       .then((res) => res.json())
       .then((questions) =>
         dispatch({
